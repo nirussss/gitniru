@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+        <nav class="why-nav">
+            <a href="index.htm"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.htm">HOME</a></li>
+                    <li><a href="about.htm">ABOUT</a></li>
+                    <li><a href="course.htm">COURSES</a></li>
+                    <li><a href="why us.htm">WHY US?</a></li>
+                    <li><a href="contact.htm">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+        </nav>
+        <!--Javascript for switching menus-->
+    <script>
+        var navLinks= document.getElementById("navLinks");
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+    </script>
+    <section class="why-us">
+        <h1>WHY NIU?</h1>
+        <div class=" why-row">
+           
+            <div class="why-col">
+                <img src="images/vision.png">
+                <h2>Our Vision</h2>
+                <p>The vision of Niruss International College is to provide a learning-centered environment committed to academic excellence and personal growth. The college aims to empower students with knowledge, skills, and values that prepare them to be competent professionals and responsible global citizens.</p>
+                </div>
+            <div class="why-col">
+                <img src="images/medal.png">
+                <h2>Our Winning Culture</h2>
+                <p>Niruss International College prioritizes rigorous academic standards.Beyond academics, the college focuses on holistic development.Nirus International College actively involves students in decision-making processes, clubs, and events.</p>
+                </div>  
+            </div>
+      
+    </section>
+    <section class="footer">
+        <h2>About us</h2>
+        <p>You can get more NIU information:</p>
+        <div class="icons">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-youtube"></i>
+        </div>
+       
+    </section>

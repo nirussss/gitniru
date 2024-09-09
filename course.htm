@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <section class="subheader">
+        <nav>
+            <a href="index.htm"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.htm">HOME</a></li>
+                    <li><a href="about.htm">ABOUT</a></li>
+                    <li><a href="course.htm">COURSES</a></li>
+                    <li><a href="why us.htm">WHY US?</a></li>
+                    <li><a href="contact.htm">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+        </nav>
+        <h1>NIU degrees</h1> 
+    </section>
+    <!--Javascript for switching menus-->
+    <script>
+        var navLinks= document.getElementById("navLinks");
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+    </script>
+    <section class="course">
+        <h1>NIU OFFERS:</h1>
+        <p> NIU offers bachelors degree in streams of Engineering and Management.</p>
+        <div class="row1">
+            <div class="course-col">
+            <h2>BCA</h2>
+            <p>Bachelor of Computer Application is another amazing IT program at NIU, that does not only offer you outstanding curriculum delivery but also ensures that you are well acquainted with latest technology and trend in the field of information and technology.Besides BCA curriculum, we also inculcate essential skills demanded by global software industry through interactive learning process.</p>
+            </div>
+            <div class="course-col">
+               <h2>BBM</h2>
+               <p>BBM is a business and management degree that helps you excel your business acumen through industry focused curriculum. With a BBM degree, you can specialize in major in-demand areas including Banking and Finance, Sales and Marketing, Insurance and Risk Management, and Entrepreneurship and Enterprise Development..</p> 
+            </div>
+            <div class="course-col">
+               <h2>BBA</h2> 
+               <p>BBA is a business degree that equips you with excellent managerial skills combined with practical organizational skills and experience. Corporate world has become fiercely competitive, and people with mediocre managerial expertise have no place anymore.</p>
+            </div>
+        </div>
+        <div class="row2">
+            <div class="course-col">
+                <h2>Bsc. CSIT</h2>
+                <p>BSc. CSIT is a specialized computer science and IT program that aims to develop very capable and innovative IT professionals, and we at NIU are one of the best institutions to have produced hundreds of excellent IT graduates over past decade. </p>
+                </div>
+                <div class="course-col">
+                   <h2>BE CIVIL</h2>
+                   <p>Civil engineering makes such connection possible by developing roads, bridges, airports, canals, tunnels and railways, and makes the development of each place possible by constructing buildings for houses, offices, schools, universities, hospitals, shopping malls etc. </p> 
+                </div>
+                <div class="course-col">
+                   <h2>BE COMPUTER</h2> 
+                   <p>Computer Engineering enables people to design, develop, assemble and operate computer hardware and software, and integrates various aspects of life with technology. The technological advancement has made enormous impact on people’s life by connecting everything with technology.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <h2>About us</h2>
+        <p>You can get more NIU information:</p>
+        <div class="icons">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-youtube"></i>
+        </div>
+       
+    </section>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+        <nav class="contact-nav">
+            <a href="index.htm"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.htm">HOME</a></li>
+                    <li><a href="about.htm">ABOUT</a></li>
+                    <li><a href="course.htm">COURSES</a></li>
+                    <li><a href="why us.htm">WHY US?</a></li>
+                    <li><a href="contact.htm">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+        </nav>
+        <!--Javascript for switching menus-->
+    <script>
+        var navLinks= document.getElementById("navLinks");
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+    </script>
+     <!--about us content-->
+     <section class="location"><h1>Our Location</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.0595627968055!2d85.38569450000004!3d27.684553900000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1a42abfe0961%3A0x392aeda795b53577!2sMadhyapur%20Thimi%2044600!5e0!3m2!1sen!2snp!4v1711034213846!5m2!1sen!2snp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+     </section>
+     <section class="contact-us">
+        <div class="contact-row">
+            <div class="contact-col">
+                <i class="fa-solid fa-phone"></i>
+                <h3>01-98456212</h3>
+                
+            </div>
+            <div class="contact-col">
+                <i class="fa-solid fa-envelope"></i>
+                <h3>nirussint'l@edu.np</h3>
+            </div>
+            <div class="contact-col">
+                <i class="fa-solid fa-house"></i> 
+                <h3>ABC Building</h3>
+                
+            </div>
+        </div>
+
+     </section>
+     <section class="footer">
+        <h2>About us</h2>
+        <p>You can get more NIU information:</p>
+        <div class="icons">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-youtube"></i>
+        </div></section>
